@@ -1,0 +1,2053 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoxTools.Lib</name>
+    </assembly>
+    <members>
+        <member name="P:FoxTools.Lib.Objects.TextPreviewItem.CodePage1">
+            <summary>
+            Исходная кодовая страница
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.TextPreviewItem.CodePage2">
+            <summary>
+            Конечная кодовая страница
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.TextPreviewItem.Text">
+            <summary>
+            Фрагмент текста кодированный из CodePage1 в CodePage2
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.Name">
+            <summary>
+            Имя параметра
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.Value">
+            <summary>
+            Значение параметра
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.IsFile">
+            <summary>
+            Параметр является файлом
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.FileName">
+            <summary>
+            Имя файла, если параметр является файлом
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.ValueAsString">
+            <summary>
+            Значение параметра в виде строки, если это строковой параметр
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.ValueAsBinary">
+            <summary>
+            Значение параметра в виде массива байт, если это файл
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.ValueAsArray">
+            <summary>
+            Значение параметра в виде массива, если это массив
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.IsNull">
+            <summary>
+            Возвращает true, если параметр не содержит никаких значений
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.IsArray">
+            <summary>
+            Возвращает true, если параметр является массивом ArrayList
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.IsString">
+            <summary>
+            Возвращает true, если параметр является строкой
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.IsBinary">
+            <summary>
+            Возвращает true, если параметр является массивом байт
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.QueryItem.ContentType">
+            <summary>
+            Тип содержимого, если параметр является файлом
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.String)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.Int32)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.Int64)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.Double)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.Guid)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.DateTime)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddQuery(System.String,System.Boolean)">
+            <summary>
+            Добавляет параметр в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="value">Значение</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddFile(System.String,System.String,System.Byte[],System.String)">
+            <summary>
+            Добавляет содержимое файла в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="fileName">Имя файла</param>
+            <param name="value">Содержимое файла</param>
+            <param name="contentType">Тип содержимого</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.AddFile(System.String,System.String,System.Byte[])">
+            <summary>
+            Добавляет содержимое файла в запрос
+            </summary>
+            <param name="name">Имя параметра</param>
+            <param name="fileName">Имя файла</param>
+            <param name="value">Содержимое файла</param>
+            <param name="contentType">Тип содержимого</param>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.IsMultipart">
+            <summary>
+            Возвращает true, если коллекция параметров содержит файлы
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.QueryCollection.ToString">
+            <summary>
+            Возвращает строку параметров
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Proxy.Uptime">
+            <summary>
+            Время ответа прокси-сервера с момента последней проверки. В секундах.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Proxy.IsFree">
+            <summary>
+            Это бесплатный прокси-сервер
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Proxy.IsAvailable">
+            <summary>
+            Признак доступности прокси-сервера с момента последней проверки доступности.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Proxy.DateChecked">
+            <summary>
+            Дата последней проверки доступности прокси-сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Proxy.Country">
+            <summary>
+            Страна прокси-сервера (основные данные)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.ID">
+            <summary>
+            Уникальный идентификатор страны в базе FoxTools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.ISO3166A2">
+            <summary>
+            Двухзначный международный код страны iso-3166-1-a2
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.ISO3166A3">
+            <summary>
+            Трехзначный международный код страны iso-3166-1-a3
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.ISO3166NUM">
+            <summary>
+            Числовой международный код страны iso-3166-1-num
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.FIPS10">
+            <summary>
+            Код страны FIPS10 (из базы ЦРУ США, без шуток)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.STANAG">
+            <summary>
+            НАТОвский код страны
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.UN">
+            <summary>
+            Код страны ООН
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.IOC">
+            <summary>
+            Код страны IOC (Международный орнитологический конгресс)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.UNISO">
+            <summary>
+            Код страны ISO ООН
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.ITU">
+            <summary>
+            Код страны ITU (Международный союз электросвязи)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.DomainZone">
+            <summary>
+            Международная доменная зона. Например: .ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.DomainZoneNational">
+            <summary>
+            Национальная доменная зона. Например: .рф
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.PhoneCode">
+            <summary>
+            Телефонный код страны
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Country.DateUpdate">
+            <summary>
+            Дата обновления данных о стране в базе FoxTools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.ExcuteMethod">
+            <summary>
+            Какие данные запрашивались с сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.Value">
+            <summary>
+            Ответ сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.ValueAsString">
+            <summary>
+            Ответ сервера в виде строки
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.ValueAsBinary">
+            <summary>
+            Ответ сервера в виде массива байт
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.ValueAsXml">
+            <summary>
+            Ответ сервера в виде XmlDocument
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.IsError">
+            <summary>
+            Была ошибка или нет
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.StatusCode">
+            <summary>
+            Код состояния
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.ErrorMessage">
+            <summary>
+            Сообщение об ошибке
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.Tag">
+            <summary>
+            Любые другие данные
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.WebResult.Response">
+            <summary>
+            Экземпляр ответа сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.WebScreen.Url">
+            <summary>
+            Адрес снимка сайта
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.WebScreen.Number">
+            <summary>
+            Позиция задания в очереди
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.WebScreen.Message">
+            <summary>
+            Системное сообщение
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.MessageCollection.TotalServerMessages">
+            <summary>
+            Количество сообщений на сервере (только для Pop3)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.Headers">
+            <summary>
+            Заголовки письма
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.Source">
+            <summary>
+            Исходные данные письма, как есть
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.Items">
+            <summary>
+            Содержимое письма
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.Subject">
+            <summary>
+            Тема письма
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.From">
+            <summary>
+            Отправитель письма
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.To">
+            <summary>
+            Получатель письма
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.Message.Date">
+            <summary>
+            Дата письма
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Net.Web">
+            <summary>
+            Хелпер-класс для выполнения HTTP-запросов метод GET и POST.
+            </summary>
+            <remarks>
+            Класс позволяет легко отправлять HTTP-запросы методом GET или POST, в ключая отправку файлов.
+            Класс имеет встроенные методы для автоматического отпределения кодировки содержимого ответа сервера, если она не соответвует данным полученным из HTTP-заголовков.
+            Класс имеет свойства для ограничения числа автоматических редиректов.
+            Также в классе реализованы механизмы для упрощения работы по протоколу HTTPS.
+            --
+            Aleksey Nemiro, 2012.8.31
+            http://aleksey.nemiro.ru
+            http://kbyte.ru
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteString">
+            <summary>
+            Делает запрос на сервер. Возвращает строку, содержащую ответ сервера.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteXml">
+            <summary>
+            Делает запрос на сервер и возвращает XmlDocument
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteBinary">
+            <summary>
+            Делает запрос на сервер. Возвращает массив байт.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.GetResponse">
+            <summary>
+            Возвращает синхронный Response
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteStringAsync(FoxTools.Lib.Net.Web.ExecuteCallback)">
+            <summary>
+            Начинает отправку асинхронного запроса на сервер.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteXmlAsync(FoxTools.Lib.Net.Web.ExecuteCallback)">
+            <summary>
+            Начинает отправку асинхронного запроса на сервер.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Net.Web.ExecuteBinaryAsync(FoxTools.Lib.Net.Web.ExecuteCallback)">
+            <summary>
+            Начинает отправку асинхронного запроса на сервер.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Headers">
+            <summary>
+            Содержит загаловки последнего запроса
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Timeout">
+            <summary>
+            Период ожидания ответа от удаленного сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.RequestEncoding">
+            <summary>
+            Кодировка для запросов
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ResponseEncoding">
+            <summary>
+            Кодировка для ответов
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ResponseAutoEncoding">
+            <summary>
+            Автоматически определять кодировку полученных данных
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Cookies">
+            <summary>
+            Кукисы
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Referer">
+            <summary>
+            URL предыдущей страницы, если пустой, то подстовляется Host
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Queries">
+            <summary>
+            Строка запроса. Например: id=1&amp;text=Nemiro Aleksey
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Method">
+            <summary>
+            Метод запроса GET|POST ... (по умолчанию - POST)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.UseProxy">
+            <summary>
+            Использовать проски при запросе.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ProxyIp">
+            <summary>
+            Адрес проксика.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ProxyPort">
+            <summary>
+            Порт проксика.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ProxyCredential">
+            <summary>
+            Учетные данные для доступа к прокси-серверу
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Url">
+            <summary>
+            Адрес запроса
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.DontSetCookies">
+            <summary>
+            Указывает, на то, что не нужно отправлять куки
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ResponseHeaders">
+            <summary>
+            Содержит загаловки последнего ответа
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ContentType">
+            <summary>
+            Тип контента:
+            application/x-www-form-urlencoded - для форм; multipart/form-data - для файлов.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ClientCertificates">
+            <summary>
+            Сертификаты
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ProtocolVersion">
+            <summary>
+            Версия HTTP-протокола (1.1, 1.0)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.SecurityProtocolType">
+            <summary>
+            Протокол безопасности
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.RequestBody">
+            <summary>
+            Тело запроса, используется для отправки POST-данных без параметров
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.AllowRedirect">
+            <summary>
+            Разрешить автоматический редирект при коде 301/302 (по умолчанию - True)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.RedirectLimit">
+            <summary>
+            Максимальное количество перенаправлений при AllowRedirect = True (по умолчанию: 3)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ContentLengthLimit">
+            <summary>
+            Максимальный размер содержимого для текстового содержимого (байт).
+            Безлимит -1 (минус один, по умолчанию.)
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.ResponseStatusCode">
+            <summary>
+            Http-код ответа сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Net.Web.Tag">
+            <summary>
+            Пользовательские данные
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Net.Web.ExecuteCallback">
+            <summary>
+            Делегат для реализации функции обратного вызова
+            </summary>
+            <param name="sender">В этом параметре может находиться ссылка на текущий экземпляр класса Web</param>
+            <param name="result">Результат выполнения асинхронного запроса</param>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.MachineKeyAlgorithm.threeDES">
+            <summary>
+            3DES
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.Action.Encode">
+            <summary>
+            Кодировать
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.Action.Decode">
+            <summary>
+            Декодировать
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.PwdCaseRules.LowerCase">
+            <summary>
+            все символы в нижнем регистре
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.PwdCaseRules.UpperCase">
+            <summary>
+            все символы в ВЕРХНЕМ регистре
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.PwdCaseRules.NextStepUpperCase">
+            <summary>
+            каждый CASESTEP символ в ВЕРХНЕМ регистре
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.PwdCaseRules.NextStepLowerCase">
+            <summary>
+            каждый CASESTEP в нижнем регистре
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Hex">
+            <summary>
+            обычный код (например: FF)
+            </summary>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "F:FoxTools.Lib.Enums.HexFormat.Basic" проигнорирован -->
+        <member name="F:FoxTools.Lib.Enums.HexFormat.C">
+            <summary>
+            код в формате Си (например: 0xFF)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Pascal">
+            <summary>
+            код в формате Паскаль (например: $FF)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Asm">
+            <summary>
+            код в формате ассемблера (например: FFh)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Regex">
+            <summary>
+            код в формате регулярных выражений (например: \xFF)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Rtf">
+            <summary>
+            код в формате RTF (например: \'FF)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Sql">
+            <summary>
+            код в формате SQL (например: 0xFFFF120B21...)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.HexFormat.Url">
+            <summary>
+            код в формате URL (например: %FF)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProgrammingLang.VB">
+            <summary>
+            Visual Basic .NET
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProgrammingLang.CS">
+            <summary>
+            CSharp (C#)
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.AscArtFormat.Text">
+            <summary>
+            текст
+            </summary>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "F:FoxTools.Lib.Enums.AscArtFormat.Html" проигнорирован -->
+        <member name="F:FoxTools.Lib.Enums.AscArtColor.BlackWhite">
+            <summary>
+            черно-белый
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.AscArtColor.Gray">
+            <summary>
+            оттенки серого
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.AscArtColor.Color">
+            <summary>
+            цветной
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.Output.Text">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.Output.File">
+            <summary>
+            Файл
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Enums.ProxyProtocol">
+            <summary>
+            Типы прокси
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyProtocol.Any">
+            <summary>
+            Любой тип
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Enums.ProxyAnonymity">
+            <summary>
+            Степень анонимности прокси
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAnonymity.Any">
+            <summary>
+            Любая степень анонимности прокси
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAnonymity.Low">
+            <summary>
+            Низкая степень анонимности
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAnonymity.Medium">
+            <summary>
+            Средняя степень анонимности
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAnonymity.High">
+            <summary>
+            Высока степень анонимности
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAnonymity.HighKeepAlive">
+            <summary>
+            Высокая степень анонимности с поддержкой Keep-Alive
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAvailable.Any">
+            <summary>
+            Любые
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAvailable.Available">
+            <summary>
+            Только доступные
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyAvailable.Unavailable">
+            <summary>
+            Только недоступные
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyFree.Any">
+            <summary>
+            Любые
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyFree.Free">
+            <summary>
+            Только бесплатные
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ProxyFree.Paid">
+            <summary>
+            Только платные
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Enums.ImageFormat">
+            <summary>
+            Форматы сохранения графических файлов
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Enums.ImageFormat.Original">
+            <summary>
+            Оставить формат файла без изменений
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Net.Enums.HttpMethod.GET">
+            <summary>
+            HTTP-метод GET
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Net.Enums.HttpMethod.POST">
+            <summary>
+            HTTP-метод POST
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Net.Enums.AsyncExcuteMethod.String">
+            <summary>
+            Строка
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Net.Enums.AsyncExcuteMethod.Binary">
+            <summary>
+            Бинарные данные
+            </summary>
+        </member>
+        <member name="F:FoxTools.Lib.Net.Enums.AsyncExcuteMethod.Xml">
+            <summary>
+            Xml
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.#ctor">
+            <summary>
+            Создает новый экземпляр класса для работы с  API FoxTools.ru с параметрами доступа, указанными в файле web.config
+            </summary>
+            <remarks>
+            FoxTools_ID - идентификатор сайта в системе.
+            FoxTools_AccessKey  - открытый ключ доступа.
+            FoxTools_SecretKey - секретный ключ.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.#ctor(System.Int32,System.Guid,System.String)">
+            <summary>
+            Создает новый экземпляр класса для работы с  API FoxTools.ru
+            </summary>
+            <param name="id">
+            Уникальный идентификатор сайта в системе.
+            Получить идентификатор можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="accessKey">
+            Открытый ключ доступа к API.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="secretKey">
+            Секретный ключ доступа к API.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Создает новый экземпляр класса для работы с  API FoxTools.ru
+            </summary>
+            <param name="id">
+            Уникальный идентификатор сайта в системе.
+            Получить идентификатор можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="accessKey">
+            Открытый ключ доступа к API. Представляет из себя GUID.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="secretKey">
+            Секретный ключ доступа к API.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.#ctor(System.Int32,System.Guid)">
+            <summary>
+            Создает новый экземпляр класса для работы с  API FoxTools.ru
+            </summary>
+            <param name="id">
+            Уникальный идентификатор сайта в системе.
+            Получить идентификатор можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="accessKey">
+            Открытый ключ доступа к API. 
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.#ctor(System.Int32,System.String)">
+            <summary>
+            Создает новый экземпляр класса для работы с  API FoxTools.ru
+            </summary>
+            <param name="id">
+            Уникальный идентификатор сайта в системе.
+            Получить идентификатор можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+            <param name="accessKey">
+            Открытый ключ доступа к API. Представляет из себя GUID.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Hash(FoxTools.Lib.Enums.HashAlgorithm,System.String,System.Byte[])">
+            <summary>
+            Рассчитывает хеш-сумму указанной строки или файла.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="text">Текст, хеш-сумму которого нужно рассчитать. Если этот параметр не указан, ожидается, что будет передан параметр data.</param>
+            <param name="data">Набор данных, для которых нужно рассчитать хеш-сумму. Данный параметр используется только если не указан параметр text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Hash(FoxTools.Lib.Enums.HashAlgorithm,System.String)">
+            <summary>
+            Рассчитывает хеш-сумму указанной строки или файла.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="text">Текст, хеш-сумму которого нужно рассчитать.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Hash(FoxTools.Lib.Enums.HashAlgorithm,System.Byte[])">
+            <summary>
+            Рассчитывает хеш-сумму указанных данных.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="text">Текст, хеш-сумму которого нужно рассчитать. Если этот параметр не указан, ожидается, что будет передан параметр data.</param>
+            <param name="data">Набор данных, для которых нужно рассчитать хеш-сумму.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Hash(FoxTools.Lib.Enums.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            Рассчитывает хеш-сумму указанных данных.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="data">Набор данных, для которых нужно рассчитать хеш-сумму.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.HashFromFile(FoxTools.Lib.Enums.HashAlgorithm,System.String)">
+            <summary>
+            Рассчитывает хеш-сумму указанного файла.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="filePath">Путь к файлу.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.HashFromUrl(FoxTools.Lib.Enums.HashAlgorithm,System.String)">
+            <summary>
+            Рассчитывает хеш-сумму файла указанного по ссылке.
+            </summary>
+            <param name="type">Алгоритм. Возможные значения: md5 (по умолчанию), sha1.</param>
+            <param name="url">Ссылка на файл.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Guid(System.Int32)">
+            <summary>
+            Метод генерирует GUID (запрос отправляется на сервер FoxTools).
+            Вы можете получить GUID на вашем компьютере при помощи стандартной функции System.Guid.NewGuid()
+            </summary>
+            <param name="max">Максимальное количество записей в результатах выполнения запроса. Минимальное значение - 1 (по умолчанию). Максимальное значение - 10 000.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Guid">
+            <summary>
+            Метод генерирует GUID (запрос отправляется на сервер FoxTools).
+            Вы можете получить GUID на вашем компьютере при помощи стандартной функции System.Guid.NewGuid()
+            </summary>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.Pwd(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,FoxTools.Lib.Enums.PwdCaseRules,System.Int32,System.String)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.Pwd(System.Int32,System.Int32,FoxTools.Lib.Enums.PwdCaseRules,System.Int32)">
+            <summary>
+            Метод генерирует уникальные пароли.
+            </summary>
+            <param name="max">Максимальное число паролей. Минимальное значение: 1 (по умолчанию). Максимальное: 100.</param>
+            <param name="len">Длина пароля. Минимальное значение: 1. Максимальное: 100. Значение по умолчанию: 6.</param>
+            <param name="caseRule">Правила назначения регистра символов.</param>
+            <param name="caseStep">Шаг чередования регистра символов, если параметр CASERULE равен 2 или 3.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pwd(System.Int32,System.Int32,FoxTools.Lib.Enums.PwdCaseRules,System.Int32,System.String)">
+            <summary>
+            Метод генерирует уникальные пароли.
+            </summary>
+            <param name="max">Максимальное число паролей. Минимальное значение: 1 (по умолчанию). Максимальное: 100.</param>
+            <param name="len">Длина пароля. Минимальное значение: 1. Максимальное: 100. Значение по умолчанию: 6.</param>
+            <param name="caseRule">Правила назначения регистра символов.</param>
+            <param name="caseStep">Шаг чередования регистра символов, если параметр CASERULE равен 2 или 3.</param>
+            <param name="chars">Набор символов, который будет использоваться для генерирования пароля.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pwd(System.Int32,FoxTools.Lib.Enums.PwdCaseRules,System.Int32,System.String)">
+            <summary>
+            Метод генерирует уникальный пароль.
+            </summary>
+            <param name="len">Длина пароля. Минимальное значение: 1. Максимальное: 100. Значение по умолчанию: 6.</param>
+            <param name="caseRule">Правила назначения регистра символов.</param>
+            <param name="caseStep">Шаг чередования регистра символов, если параметр CASERULE равен 2 или 3.</param>
+            <param name="chars">Набор символов, который будет использоваться для генерирования пароля.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pwd(System.Int32,FoxTools.Lib.Enums.PwdCaseRules,System.Int32)">
+            <summary>
+            Метод генерирует уникальный пароль.
+            </summary>
+            <param name="len">Длина пароля. Минимальное значение: 1. Максимальное: 100. Значение по умолчанию: 6.</param>
+            <param name="caseRule">Правила назначения регистра символов.</param>
+            <param name="caseStep">Шаг чередования регистра символов, если параметр CASERULE равен 2 или 3.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pwd(System.Int32)">
+            <summary>
+            Метод генерирует уникальный пароль.
+            </summary>
+            <param name="len">Длина пароля. Минимальное значение: 1. Максимальное: 100. Значение по умолчанию: 6.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pwd">
+            <summary>
+            Метод генерирует уникальный пароль.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.UrlEncoder(FoxTools.Lib.Enums.Action,System.String,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Url (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Url силами .NET Framerwork, необходимые функции для этого лежат в классе System.Web.HttpUtility.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать, либо декодировать.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.UrlEncoder(FoxTools.Lib.Enums.Action,System.String)">
+            <summary>
+            Кодер/Декодер Url (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Url силами .NET Framerwork, необходимые функции для этого лежат в классе System.Web.HttpUtility.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать, либо декодировать.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Html(FoxTools.Lib.Enums.Action,System.String)">
+            <summary>
+            Кодер/Декодер сущностей XML/HTML (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Html силами .NET Framerwork, необходимые функции для этого лежат в классе System.Web.HttpUtility.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать, либо декодировать.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.String,System.Byte[],System.Boolean,FoxTools.Lib.Enums.Output,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT или DATA.</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Этот параметр используется, если не указан data.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="output">Формат выдачи данных при декодировании (action = decode). По умолчанию - Text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64Async(FoxTools.Lib.Enums.Action,System.String,System.Byte[],System.Boolean,FoxTools.Lib.Enums.Output,System.Text.Encoding,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT или DATA.</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Этот параметр используется, если не указан data.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="output">Формат выдачи данных при декодировании (action = decode). По умолчанию - Text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64Async(FoxTools.Lib.Enums.Action,System.Byte[],System.Boolean,FoxTools.Lib.Enums.Output,System.Text.Encoding,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT или DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64Async(FoxTools.Lib.Enums.Action,System.IO.Stream,System.Boolean,FoxTools.Lib.Enums.Output,System.Text.Encoding,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT или DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Этот параметр используется, если не указан data.</param>
+            <param name="cp">Кодировка</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.String,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Этот параметр используется, если не указан data.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.String)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над TEXT.</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Этот параметр используется, если не указан data.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.Byte[],System.Boolean,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.Byte[],System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.Byte[])">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.IO.Stream,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="cp">Кодировка</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Base64(FoxTools.Lib.Enums.Action,System.IO.Stream)">
+            <summary>
+            Кодер/Декодер Base64 (запрос отправляется на сервер FoxTools). 
+            Вы можете программно кодировать/декодировать Base64 силами .NET Framerwork, необходимые функции для этого лежат в классе System.Convert.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над DATA.</param>
+            <param name="data">Данные, которые нужно кодировать либо декодировать. Этот параметр используется, если не указан text.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="text">Текст, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.String,System.Boolean)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="text">Текст, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.String)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="text">Текст, который нужно кодировать в Base64.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.Byte[],System.Boolean,System.Text.Encoding)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.Byte[],System.Boolean)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.Byte[])">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно кодировать в Base64.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.IO.Stream,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.IO.Stream,System.Boolean)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToBase64(System.IO.Stream)">
+            <summary>
+            Преобразует указанные данные в Base64.
+            </summary>
+            <param name="data">Данные, которые нужно кодировать в Base64.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFileToBase64(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Преобразует указанный файл в Base64.
+            </summary>
+            <param name="filePath">Путь к файлу, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFileToBase64(System.String,System.Boolean)">
+            <summary>
+            Преобразует указанный файл в Base64.
+            </summary>
+            <param name="filePath">Путь к файлу, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFileToBase64(System.String)">
+            <summary>
+            Преобразует указанный файл в Base64.
+            </summary>
+            <param name="filePath">Путь к файлу, который нужно кодировать в Base64.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertUrlToBase64(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Преобразует указанный по url файл в Base64.
+            </summary>
+            <param name="url">Url к файлу, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+            <param name="cp">Кодировка</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertUrlToBase64(System.String,System.Boolean)">
+            <summary>
+            Преобразует указанный по url файл в Base64.
+            </summary>
+            <param name="url">Url к файлу, который нужно кодировать в Base64.</param>
+            <param name="disallowLineBreaks">Запрещает выставлять переводы строк каждые 72 символа при кодировании данных в Base64 (ACTION=ENCODE). Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertUrlToBase64(System.String)">
+            <summary>
+            Преобразует указанный по url файл в Base64.
+            </summary>
+            <param name="url">Url к файлу, который нужно кодировать в Base64.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Hex(FoxTools.Lib.Enums.Action,FoxTools.Lib.Enums.HexFormat,System.String,System.String,System.Boolean,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные в шестнадцатеричный вид (HEX) и обратно
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить над VALUE</param>
+            <param name="format">Формат кодирования</param>
+            <param name="value">Данные, которые нужно преобразовать в/из HEX.</param>
+            <param name="pattern">Шаблон подстановки. Используется только при преобразовании данных в шестнадцатеричный вид (ACTION=ENCODE). В шаблоне можно использовать следующие команды: {index} - порядковый номер конвертируемого символа (начиная с нуля); {hex} - шестнадцатеричный код символа. Другие символы останутся без изменений. Например, при шаблоне "arr[{index}] = {hex}; ", результат преобразования строки "fox" в шестнадцатеричный вид будет таким: arr[0] = 0x66; arr[1] = 0x6F; arr[2] = 0x78; Значение по умолчанию: {hex}.</param>
+            <param name="isNumeric">Указывает, что значение VALUE нужно обрабатывать как число. Значение по умолчанию: FALSE.</param>
+            <param name="removeUnhex">Используется только при декодировании (ACTION=DECODE) данных из шестнадцатеричного вида. Если значение данного параметра равно TRUE, то из VALUE будут удалены все лишние символы, не являющиеся шестнадцатеричным представлением. Например, входная строка: "0x46 0x6F ой 0x78 лишные символы 0x54 будут 0x6F0x6F ;;;;; 0x6C0x730x2E0x72 удалены 0x75", на выходе будет: "FoxTools.ru". Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToHex(FoxTools.Lib.Enums.HexFormat,System.String,System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные в шестнадцатеричный вид (HEX).
+            </summary>
+            <param name="value">Данные, которые нужно преобразовать в HEX.</param>
+            <param name="pattern">Шаблон подстановки. В шаблоне можно использовать следующие команды: {index} - порядковый номер конвертируемого символа (начиная с нуля); {hex} - шестнадцатеричный код символа. Другие символы останутся без изменений. Например, при шаблоне "arr[{index}] = {hex}; ", результат преобразования строки "fox" в шестнадцатеричный вид будет таким: arr[0] = 0x66; arr[1] = 0x6F; arr[2] = 0x78; Значение по умолчанию: {hex}.</param>
+            <param name="isNumeric">Указывает, что значение VALUE нужно обрабатывать как число. Значение по умолчанию: FALSE.</param>
+            <param name="format">Формат кодирования</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToHex(FoxTools.Lib.Enums.HexFormat,System.String,System.String,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные в шестнадцатеричный вид (HEX).
+            </summary>
+            <param name="value">Данные, которые нужно преобразовать в HEX.</param>
+            <param name="pattern">Шаблон подстановки. В шаблоне можно использовать следующие команды: {index} - порядковый номер конвертируемого символа (начиная с нуля); {hex} - шестнадцатеричный код символа. Другие символы останутся без изменений. Например, при шаблоне "arr[{index}] = {hex}; ", результат преобразования строки "fox" в шестнадцатеричный вид будет таким: arr[0] = 0x66; arr[1] = 0x6F; arr[2] = 0x78; Значение по умолчанию: {hex}.</param>
+            <param name="format">Формат кодирования</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToHex(FoxTools.Lib.Enums.HexFormat,System.String,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные в шестнадцатеричный вид (HEX).
+            </summary>
+            <param name="value">Данные, которые нужно преобразовать в HEX.</param>
+            <param name="pattern">Шаблон подстановки. В шаблоне можно использовать следующие команды: {index} - порядковый номер конвертируемого символа (начиная с нуля); {hex} - шестнадцатеричный код символа. Другие символы останутся без изменений. Например, при шаблоне "arr[{index}] = {hex}; ", результат преобразования строки "fox" в шестнадцатеричный вид будет таким: arr[0] = 0x66; arr[1] = 0x6F; arr[2] = 0x78; Значение по умолчанию: {hex}.</param>
+            <param name="format">Формат кодирования</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFromHex(System.String,System.Boolean,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные из шестнадцатеричного (HEX) вида в текст или число.
+            </summary>
+            <param name="value">Данные, содержащие HEX, которые нужно преобразовать в текст или число.</param>
+            <param name="isNumeric">Указывает, что значение VALUE нужно обрабатывать как число. Значение по умолчанию: FALSE.</param>
+            <param name="removeUnhex">Используется только при декодировании (ACTION=DECODE) данных из шестнадцатеричного вида. Если значение данного параметра равно TRUE, то из VALUE будут удалены все лишние символы, не являющиеся шестнадцатеричным представлением. Например, входная строка: "0x46 0x6F ой 0x78 лишные символы 0x54 будут 0x6F0x6F ;;;;; 0x6C0x730x2E0x72 удалены 0x75", на выходе будет: "FoxTools.ru". Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFromHex(System.String,System.Boolean,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные из шестнадцатеричного (HEX) вида в текст или число.
+            </summary>
+            <param name="value">Данные, содержащие HEX, которые нужно преобразовать в текст или число.</param>
+            <param name="isNumeric">Указывает, что значение VALUE нужно обрабатывать как число. Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFromHex(System.String,System.Text.Encoding)">
+            <summary>
+            Метод позволяет преобразовать данные из шестнадцатеричного (HEX) вида в текст или число.
+            </summary>
+            <param name="value">Данные, содержащие HEX, которые нужно преобразовать в текст или число.</param>
+            <param name="isNumeric">Указывает, что значение VALUE нужно обрабатывать как число. Значение по умолчанию: FALSE.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Text(System.String,System.Text.Encoding,System.Text.Encoding,System.Boolean,System.Boolean)">
+            <summary>
+            Метод определяет кодировку текста и позволяет преобразовывать текст из одной кодировки в друг
+            </summary>
+            <param name="text">Текст, кодировку которого нужно определить, либо преобразовать.</param>
+            <param name="cp1">Исходная кодировка текста. Значение по умолчанию: определяется автоматически.</param>
+            <param name="cp2">Кодировка, в которую нужно преобразовать текст. Если данный параметр не указан, на выходе будет предложен список возможных кодировок на выбор. </param>
+            <param name="detect">Управляет опцией автоматического определения кодировки по тексту. При значении TRUE в результате запроса будет возвращен список определенных кодировок и часть текста, преобразованного в эти кодировки. Если не указана исходная кодировка (CP1), значение данного параметра всегда будет TRUE.</param>
+            <param name="av">Позволяет снять ограничение со списка исходящих кодировок, в случаях, когда параметр CP2 не указан. Если параметр CP2 не указан, по умолчанию TEXT будет кодирован в следующие кодировки: windows-1251, iso-8859-1, koi8-r, utf-8, gb2312, ibm855, cp866, x-mac-cyrillic, ibm880, koi8-u, iso-8859-5. Это наиболее популярные кодовые страницы, и другие кодировки обычно не требуются. Установка параметра AV в значение TRUE снимает ограничение со списка исходящих кодировок и на выходе будут предложены варианты TEXT во всех существующих кодировках. Значение по умолчанию FALSE.</param>
+            <remarks>Если параметры CP1 или CP2 не будут указаны, то метод вернет несколько вариантов фрагментов TEXT, перекодированного между разными кодировками. Если параметры CP1 и CP2 указаны, то будет возвращает TEXT кодированный между указанными кодировками.</remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Text(System.String,System.Text.Encoding,System.Text.Encoding)">
+            <summary>
+            Метод определяет кодировку текста и позволяет преобразовывать текст из одной кодировки в друг
+            </summary>
+            <param name="text">Текст, кодировку которого нужно определить, либо преобразовать.</param>
+            <param name="cp1">Исходная кодировка текста.</param>
+            <param name="cp2">Кодировка, в которую нужно преобразовать текст.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Text(System.String)">
+            <summary>
+            Метод определяет кодировку текста и позволяет преобразовывать текст из одной кодировки в друг
+            </summary>
+            <param name="text">Текст, кодировку которого нужно определить, либо преобразовать.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Qr(FoxTools.Lib.Enums.Action,System.String,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.Int32,System.String,System.Byte[],System.Text.Encoding)">
+            <summary>
+            Метод позволяет создавать и читать QR-коды. 
+            Если ACTION = ENCODE, метод кодирует указанный TEXT в QR-код и возвращает ссылку на него.
+            Если ACTION = DECODE, метод читает указанный в URL или DATAT QR-код и возвращает результат.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить. Возможные значения: ENCODE - создать QR-кол; DECODE - прочитать QR-код.</param>
+            <param name="text">Текст, из которого нужно сделать QR-код. Только если ACTION=ENCODE.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <param name="url">Адрес файла, содержащего QR-код, который нужно прочитать. Используется только если ACTION = DECODE. Данный параметр является обязательным, если не указан параметр FILE1.</param>
+            <param name="data">Файл, содержащий QR-код, который нужно прочитать. Используется только если ACTION = DECODE. Данный параметр является обязательным, если не указан параметр URL. Допускаются только файлы в форматах: .jpg, .jpeg, .gif, .png и .bmp.</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQr(System.String,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Text.Encoding)">
+            <summary>
+            Метод преобразовывает указанный текст в QR-код.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQr(System.String,System.Drawing.Color,System.Drawing.Color,System.Int32)">
+            <summary>
+            Метод преобразовывает указанный текст в QR-код.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQr(System.String)">
+            <summary>
+            Метод преобразовывает указанный текст в QR-код.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQrImage(System.String,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Text.Encoding)">
+            <summary>
+            Метод преобразовывает указанный текст в изображение QR-кода.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQrImage(System.String,System.Drawing.Color,System.Drawing.Color,System.Int32)">
+            <summary>
+            Метод преобразовывает указанный текст в изображение QR-кода.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertToQrImage(System.String)">
+            <summary>
+            Метод преобразовывает указанный текст в изображение QR-кода.
+            </summary>
+            <param name="text">Текст, из которого нужно сделать QR-код.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertFromQrUrl(System.String,System.Text.Encoding)">
+            <summary>
+            Читает QR-код по заданному url
+            </summary>
+            <param name="url">Адрес изображения с QR-кодом</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromUrl(System.String)">
+            <summary>
+            Читает QR-код по заданному url
+            </summary>
+            <param name="url">Адрес изображения с QR-кодом</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.Byte[],System.Text.Encoding)">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="data">Данные файла, из которого нужно прочитать QR-код</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.Byte[])">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="data">Данные файла, из которого нужно прочитать QR-код</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.String,System.Text.Encoding)">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="filePath">Путь к файлу</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.String)">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="filePath">Путь к файлу</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="data">Данные файла, из которого нужно прочитать QR-код</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromFile(System.IO.Stream)">
+            <summary>
+            Читает QR-код из указанного файла
+            </summary>
+            <param name="data">Данные файла, из которого нужно прочитать QR-код</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromImage(System.Drawing.Image,System.Text.Encoding)">
+            <summary>
+            Читает QR-код из указанного изображения
+            </summary>
+            <param name="img">Изображение, из которого нужно прочитать QR-код</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConvertQrFromImage(System.Drawing.Image)">
+            <summary>
+            Читает QR-код из указанного изображения
+            </summary>
+            <param name="img">Изображение, из которого нужно прочитать QR-код</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.QrAsync(FoxTools.Lib.Enums.Action,System.String,System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.Int32,System.String,System.Byte[],System.Text.Encoding,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Метод позволяет создавать и читать QR-коды асинхронно. 
+            Если ACTION = ENCODE, метод кодирует указанный TEXT в QR-код и возвращает ссылку на него.
+            Если ACTION = DECODE, метод читает указанный в URL или DATAT QR-код и возвращает результат.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить. Возможные значения: ENCODE - создать QR-кол; DECODE - прочитать QR-код.</param>
+            <param name="text">Текст, из которого нужно сделать QR-код. Только если ACTION=ENCODE.</param>
+            <param name="fcolor">Шестизначный код цвета QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: 000000 (черный).</param>
+            <param name="bcolor">Шестизначный код цвета фона QR-кода. Используется только если ACTION = ENCODE. Значение по умолчанию: FFFFFF (белый).</param>
+            <param name="size">Размер QR-кода. Используется только если ACTION = ENCODE. Возможны значения от 1 до 10. Значение по умолчанию: 4.</param>
+            <param name="url">Адрес файла, содержащего QR-код, который нужно прочитать. Используется только если ACTION = DECODE. Данный параметр является обязательным, если не указан параметр FILE1.</param>
+            <param name="data">Файл, содержащий QR-код, который нужно прочитать. Используется только если ACTION = DECODE. Данный параметр является обязательным, если не указан параметр URL. Допускаются только файлы в форматах: .jpg, .jpeg, .gif, .png и .bmp.</param>
+            <param name="cp">Кодировка. Значение по умолчанию: UTF-8.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Idn(FoxTools.Lib.Enums.Action,System.String)">
+            <summary>
+            Метод позволяет кодировать/декодировать IDN (Internationalized Domain Names).
+            Вы можете программно кодировать/декодировать IDN встроенными средствами .NET Framerwork.
+            </summary>
+            <param name="action">Действие, которое необходимо выполнить. Возможные значения: ENCODE - получить Punycode (пример.рф > xn--e1afmkfd.xn--p1ai); DECODE - прочитать Punycode (xn--e1afmkfd.xn--p1ai > пример.рф).</param>
+            <param name="text">Текст, который нужно кодировать либо декодировать. Можно указывать по одному доменному имени на одной строке. В одном запросе параметр TEXT не должен содержать больше ста (100) строк.</param>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.CodeConverter(System.String,FoxTools.Lib.Enums.ProgrammingLang)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.ConverterVisualBasicToCSharp(System.String)">
+            <summary>
+            Преобразует код Visual Basic .NET в C#
+            </summary>
+            <param name="code">Код, который нужно преобразовать (не более 10 000 строк).</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ConverterCSharpToVisualBasic(System.String)">
+            <summary>
+            Преобразует код C# в Visual Basic .NET
+            </summary>
+            <param name="code">Код, который нужно преобразовать (не более 10 000 строк).</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.MachineKeyForASP1x(FoxTools.Lib.Enums.MachineKeyAlgorithm)">
+            <summary>
+            Метод генерирует MachineKey для ASP .NET 1.1.
+            </summary>
+            <param name="type">Алгоритм</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.MachineKeyForASP1x">
+            <summary>
+            Метод генерирует MachineKey для ASP .NET 1.1.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.MachineKeyForASP234(FoxTools.Lib.Enums.MachineKeyAlgorithm)">
+            <summary>
+            Метод генерирует MachineKey для ASP .NET 2.0, 3.5, 4.0, 4.5.
+            </summary>
+            <param name="type">Алгоритм</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.MachineKeyForASP234">
+            <summary>
+            Метод генерирует MachineKey для ASP .NET 2.0, 3.5, 4.0, 4.5.
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pop3(System.String,System.Int32,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Метод позволяет получать письма с почтового сервера по протоколу POP3.
+            </summary>
+            <param name="host">Адрес почтового сервера. Например: pop.yandex.ru</param>
+            <param name="port">Порт, через который можно получить доступ к почтовому сервере. Например: 110.</param>
+            <param name="login">Имя пользователя для доступа к почтовому серверу.</param>
+            <param name="pwd">Пароль пользователя для доступа к почтовому серверу.</param>
+            <param name="max">Максимальное число писем, которое нужно получить с сервера. Используйте этот параметр, чтобы ограничить число получаемых писем, если их очень много. При этом, рекомендуется удалять полученные письма - REMOVE = TRUE, чтобы иметь возможность получить оставшиеся. Значение по умолчанию 0 - без ограничений.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки писем, исключая содержимое. Рекомендуется использовать данный метод, если на сервере много писем, т.к. процесс получения всех писем может знаять длительное время, и в некоторых слаучая, почтовый сервер может оборвать соединение, что приведет к возникновению ошибки. Значение по умолчанию: FALSE.</param>
+            <param name="includeSource">При значении данного параметра TRUE в ответ будет включено содержимое письма как есть, в бинарном виде. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <param name="textOnly">При значении данного параметра TRUE будет выдано только текстовое (text/plain, text/html) содержимое писем, multipart и файлы будут исключены из ответа. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <param name="remove">
+            При значении данного параметра TRUE, полученные письма будут удалены с сервера. Значение по умолчанию: FALSE (письма не удаляются).
+            
+            ВНИМАНИЕ. Если параметр REMOVE = TRUE все письма будут УДАЛЕНЫ с сервера! ВОССТАНОВИТЬ ДАННЫЕ ПОСЛЕ УДАЛЕНИЯ БУДЕТ НЕВОЗМОЖНО!
+            </param>
+            <remarks>
+            -ERR Unable to log on
+            Данная ошибка означает, что допущена ошибка в указании имени пользователя или пароля. 
+            
+            -ERR Unable to log on. Only one connection to a mailbox permitted at a time.
+            Данная ошибка означает, что одновременно только один пользователь может использовать одну учетную запись. Чаще всего такая ошибка происходит, если пользователь подключился к серверу, но не завершил соединение корректно и сервер считает, что пользователь все еще подключен. В таком случае следует подождать примерно 10-30 минут, когда сервер автоматически отключит пользователя и появится возможность вновь подключится к серверу.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Pop3(System.String,System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Метод позволяет получать письма с почтового сервера по протоколу POP3.
+            </summary>
+            <param name="host">Адрес почтового сервера. Например: pop.yandex.ru</param>
+            <param name="login">Имя пользователя для доступа к почтовому серверу.</param>
+            <param name="pwd">Пароль пользователя для доступа к почтовому серверу.</param>
+            <param name="max">Максимальное число писем, которое нужно получить с сервера. Используйте этот параметр, чтобы ограничить число получаемых писем, если их очень много. При этом, рекомендуется удалять полученные письма - REMOVE = TRUE, чтобы иметь возможность получить оставшиеся. Значение по умолчанию 0 - без ограничений.</param>
+            <param name="remove">
+            При значении данного параметра TRUE, полученные письма будут удалены с сервера. Значение по умолчанию: FALSE (письма не удаляются).
+            
+            ВНИМАНИЕ. Если параметр REMOVE = TRUE все письма будут УДАЛЕНЫ с сервера! ВОССТАНОВИТЬ ДАННЫЕ ПОСЛЕ УДАЛЕНИЯ БУДЕТ НЕВОЗМОЖНО!
+            </param>
+            <remarks>
+            -ERR Unable to log on
+            Данная ошибка означает, что допущена ошибка в указании имени пользователя или пароля. 
+            
+            -ERR Unable to log on. Only one connection to a mailbox permitted at a time.
+            Данная ошибка означает, что одновременно только один пользователь может использовать одну учетную запись. Чаще всего такая ошибка происходит, если пользователь подключился к серверу, но не завершил соединение корректно и сервер считает, что пользователь все еще подключен. В таком случае следует подождать примерно 10-30 минут, когда сервер автоматически отключит пользователя и появится возможность вновь подключится к серверу.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.String,System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="text">Данные MIME в текстовом виде. Ввиду особенностей кодирования данных, рекомендуется передавать MIME в бинарном виде в параметр data.</param>
+            <param name="data">Бинарные данные MIME (рекомендуется использовать вместо TEXT).</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <param name="textOnly">При значении данного параметра TRUE будет выдано только текстовое (text/plain, text/html) содержимое письма, multipart и файлы будут исключены из ответа. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="text">Данные MIME в текстовом виде. Ввиду особенностей кодирования данных, рекомендуется передавать MIME в бинарном виде в параметр data.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <param name="textOnly">При значении данного параметра TRUE будет выдано только текстовое (text/plain, text/html) содержимое письма, multipart и файлы будут исключены из ответа. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.String,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="text">Данные MIME в текстовом виде. Ввиду особенностей кодирования данных, рекомендуется передавать MIME в бинарном виде в параметр data.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.String)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="text">Данные MIME в текстовом виде. Ввиду особенностей кодирования данных, рекомендуется передавать MIME в бинарном виде в параметр data.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.Byte[],System.Boolean,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <param name="textOnly">При значении данного параметра TRUE будет выдано только текстовое (text/plain, text/html) содержимое письма, multipart и файлы будут исключены из ответа. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <param name="textOnly">При значении данного параметра TRUE будет выдано только текстовое (text/plain, text/html) содержимое письма, multipart и файлы будут исключены из ответа. Значение по умолчанию: FALSE. Данный параметр игнорируется, если HEADERSONLY = TRUE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.Byte[],System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.IO.Stream,System.Boolean)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <param name="headersOnly">При значении данного параметра TRUE, сервер вернет только заголовки, исключая содержимое. Значение по умолчанию: FALSE.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.Byte[])">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Mime(System.IO.Stream)">
+            <summary>
+            Парсер MIME. В отличие POP3, данный метод не получает письма с сервера, а лишь обрабатывает переданные иму данные.
+            </summary>
+            <param name="data">Бинарные данные MIME.</param>
+            <remarks>
+            Если указан параметр TEXT и DATA, то используется только DATA.
+            </remarks>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.Byte[],System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.Byte[],FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.Byte[],FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.Byte[],FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.Byte[],FoxTools.Lib.Enums.AscArtFormat)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.AscArt(System.Byte[])">
+            <summary>
+            Конвертер картинок в ASCII
+            </summary>
+            <param name="data">Данные графического файла.</param>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.IO.Stream,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.IO.Stream,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.IO.Stream,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.IO.Stream,FoxTools.Lib.Enums.AscArtFormat)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.AscArt(System.IO.Stream)">
+            <summary>
+            Конвертер картинок в ASCII
+            </summary>
+            <param name="data">Данные графического файла.</param>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.AscArt(System.String,FoxTools.Lib.Enums.AscArtFormat)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.AscArt(System.String)">
+            <summary>
+            Конвертер картинок в ASCII
+            </summary>
+            <param name="url">Ссылка на графический файл.</param>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageToAsc(System.Drawing.Image,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageToAsc(System.Drawing.Image,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageToAsc(System.Drawing.Image,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageToAsc(System.Drawing.Image,FoxTools.Lib.Enums.AscArtFormat)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.ConvertImageToAsc(System.Drawing.Image)">
+            <summary>
+            Конвретирует изображение в ASCII
+            </summary>
+            <param name="img">Изображение, котрое нужно конвертировать в ASCII-код</param>
+        </member>
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageFileToAsc(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String,System.Int32)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageFileToAsc(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor,System.String)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageFileToAsc(System.String,FoxTools.Lib.Enums.AscArtFormat,FoxTools.Lib.Enums.AscArtColor)" проигнорирован -->
+        <!-- Некорректный XML-комментарий для члена "M:FoxTools.Lib.Api.ConvertImageFileToAsc(System.String,FoxTools.Lib.Enums.AscArtFormat)" проигнорирован -->
+        <member name="M:FoxTools.Lib.Api.ConvertImageFileToAsc(System.String)">
+            <summary>
+            Конвретирует файл изображения в ASCII
+            </summary>
+            <param name="path">Путь к графическому файлу, котрый нужно конвертировать в ASCII-код</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Proxy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,FoxTools.Lib.Enums.ProxyAvailable,FoxTools.Lib.Enums.ProxyFree,System.Int32,System.Int32)">
+            <summary>
+            Возвращает список прокси-серверов
+            </summary>
+            <param name="page">Начальная страница</param>
+            <param name="max">Максимальное количество данных на одной странице (от 1 до 100)</param>
+            <param name="country">Уникальный числовой код страны в базе FoxTools.ru (см. справочник Countries). 0 - любая страна.</param>
+            <param name="protocol">Протокол. Битовая маска. См. Enums.ProxyProtocol</param>
+            <param name="anonymity">Степень анонимности. Битовая маска. См. Enums.ProxyAnonymity</param>
+            <param name="uptime">Максимальное время ответа прокси-сервера (в секундах). 0 - без ограничений.</param>
+            <param name="availableStatus">Статус доступности.</param>
+            <param name="freeStatus">Статус бесплатности.</param>
+            <param name="portFrom">Номер порта от. 0 - любой номер порта.</param>
+            <param name="portTo">Номер порта до. 0 - любой номер порта.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Proxy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Возвращает список доступных бесплатных прокси-серверов
+            </summary>
+            <param name="page">Начальная страница</param>
+            <param name="max">Максимальное количество данных на одной странице (от 1 до 100)</param>
+            <param name="country">Уникальный числовой код страны в базе FoxTools.ru (см. справочник Countries). 0 - любая страна.</param>
+            <param name="protocol">Протокол. Битовая маска. См. Enums.ProxyProtocol</param>
+            <param name="anonymity">Степень анонимности. Битовая маска. См. Enums.ProxyAnonymity</param>
+            <param name="uptime">Максимальное время ответа прокси-сервера (в секундах). 0 - без ограничений.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Proxy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Возвращает список доступных бесплатных прокси-серверов
+            </summary>
+            <param name="page">Начальная страница</param>
+            <param name="max">Максимальное количество данных на одной странице (от 1 до 100)</param>
+            <param name="country">Уникальный числовой код страны в базе FoxTools.ru (см. справочник Countries). 0 - любая страна.</param>
+            <param name="protocol">Протокол. Битовая маска. См. Enums.ProxyProtocol</param>
+            <param name="anonymity">Степень анонимности. Битовая маска. См. Enums.ProxyAnonymity</param>
+            <param name="uptime">Максимальное время ответа прокси-сервера (в секундах). 0 - без ограничений.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Proxy(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Возвращает список доступных бесплатных прокси-серверов
+            </summary>
+            <param name="page">Начальная страница</param>
+            <param name="max">Максимальное количество данных на одной странице (от 1 до 100)</param>
+            <param name="uptime">Максимальное время ответа прокси-сервера (в секундах). 0 - без ограничений.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Proxy(System.Int32,System.Int32)">
+            <summary>
+            Возвращает список доступных бесплатных прокси-серверов
+            </summary>
+            <param name="page">Начальная страница</param>
+            <param name="max">Максимальное количество данных на одной странице (от 1 до 100)</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Ip(System.String)">
+            <summary>
+            Возвращает информацию об ip-адресе
+            </summary>
+            <param name="ip">IP-адрес информацию о котором нужно получить</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.IpAsync(System.String,FoxTools.Lib.Api.IpResultCallback)">
+            <summary>
+            Возвращает информацию об ip-адресе. Запрос выполняется асинхронно.
+            </summary>
+            <param name="ip">IP-адрес информацию о котором нужно получить</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Screen(System.Byte[],FoxTools.Lib.Enums.ImageFormat,System.Int32)">
+            <summary>
+            Отправляет указанный графический файл на сервер обмена изображениями. Возвращает url к отправленному файлу.
+            </summary>
+            <param name="data">Данные графического файла</param>
+            <param name="format">Формат хранения графического файла</param>
+            <param name="lifetime">Время хранения файла в минутах</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Screen(System.IO.Stream,FoxTools.Lib.Enums.ImageFormat,System.Int32)">
+            <summary>
+            Отправляет указанный графический файл на сервер обмена изображениями. Возвращает url к отправленному файлу.
+            </summary>
+            <param name="data">Данные графического файла</param>
+            <param name="format">Формат хранения графического файла</param>
+            <param name="lifetime">Время хранения файла в минутах</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ScreenFromFile(System.String,FoxTools.Lib.Enums.ImageFormat,System.Int32)">
+            <summary>
+            Отправляет указанный графический файл на сервер обмена изображениями. Возвращает url к отправленному файлу.
+            </summary>
+            <param name="filePath">Путь к графическому файлу</param>
+            <param name="format">Формат хранения графического файла</param>
+            <param name="lifetime">Время хранения файла в минутах</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ScreenAsync(System.Byte[],FoxTools.Lib.Enums.ImageFormat,System.Int32,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Асинхронно отправляет указанный графический файл на сервер обмена изображениями. Возвращает url к отправленному файлу.
+            </summary>
+            <param name="data">Данные графического файла</param>
+            <param name="format">Формат хранения графического файла</param>
+            <param name="lifetime">Время хранения файла в минутах</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.WebScreen(System.String)">
+            <summary>
+            Отправляет задание на создание снимка сайта
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.Countries">
+            <summary>
+            Возвращает список стран
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int64,System.Boolean)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="disableComments">Запретить комментарии</param>
+            <param name="disableRss">Запретить RSS</param>
+            <param name="disableSocial">Запретить социальные кнопки</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+            <param name="title">Заголовок zz-страницы</param>
+            <param name="test">Запрос на тестовый сервер, а не на боевой. Рекомендуется использовать для тестирования</param>
+            <param name="pid">Идентификатор родительской zz-страницы. Если pid > 0, то к указанной странице будет добавлен комментарий.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.Boolean)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.Boolean)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo},System.String)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="images">Коллекция изображений</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.Collections.Generic.List{System.IO.FileInfo})">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="images">Коллекция изображений</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWeb(System.String,System.String)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="images">Коллекция изображений</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebComment(System.Int64,System.String,System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Добавляет комментарий к указанной zz-странице
+            </summary>
+            <param name="pid">Идентификатор страницы, комментарий к которой нужно добавить</param>
+            <param name="description">Текст комментария</param>
+            <param name="images">Изображения</param>
+            <param name="signature">Подпись автора</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="test">Тестовый режим. Если true, то pid должен указывать на тестовую страницу.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebComment(System.Int64,System.String,System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String)">
+            <summary>
+            Добавляет комментарий к указанной zz-странице
+            </summary>
+            <param name="pid">Идентификатор страницы, комментарий к которой нужно добавить</param>
+            <param name="description">Текст комментария</param>
+            <param name="images">Изображения</param>
+            <param name="signature">Подпись автора</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebComment(System.Int64,System.String,System.Collections.Generic.List{System.IO.FileInfo},System.String,System.Boolean)">
+            <summary>
+            Добавляет комментарий к указанной zz-странице
+            </summary>
+            <param name="pid">Идентификатор страницы, комментарий к которой нужно добавить</param>
+            <param name="description">Текст комментария</param>
+            <param name="images">Изображения</param>
+            <param name="signature">Подпись автора</param>
+            <param name="test">Тестовый режим. Если true, то pid должен указывать на тестовую страницу.</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebComment(System.Int64,System.String,System.Collections.Generic.List{System.IO.FileInfo},System.String)">
+            <summary>
+            Добавляет комментарий к указанной zz-странице
+            </summary>
+            <param name="pid">Идентификатор страницы, комментарий к которой нужно добавить</param>
+            <param name="description">Текст комментария</param>
+            <param name="images">Изображения</param>
+            <param name="signature">Подпись автора</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebAsync(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="disableComments">Запретить комментарии</param>
+            <param name="disableRss">Запретить RSS</param>
+            <param name="disableSocial">Запретить социальные кнопки</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+            <param name="title">Заголовок zz-страницы</param>
+        </member>
+        <member name="M:FoxTools.Lib.Api.ZzWebAsync(System.Collections.Generic.List{System.IO.FileInfo},System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int64,System.Boolean,FoxTools.Lib.Api.StringResultCallback)">
+            <summary>
+            Создает zz-страницу
+            </summary>
+            <param name="description">Описание</param>
+            <param name="disableComments">Запретить комментарии</param>
+            <param name="disableRss">Запретить RSS</param>
+            <param name="disableSocial">Запретить социальные кнопки</param>
+            <param name="email">Имя учетной zz-записи для авторизации</param>
+            <param name="images">Коллекция изображений</param>
+            <param name="lepota">Украсить страницу</param>
+            <param name="pwd">Пароль учетной zz-записи</param>
+            <param name="signature">Подпись автора zz-странички</param>
+            <param name="title">Заголовок zz-страницы</param>
+            <param name="test">Запрос на тестовый сервер, а не на боевой</param>
+            <param name="pid">Идентификатор родительской zz-страницы. Если pid > 0, то к указанной странице будет добавлен комментарий.</param>
+        </member>
+        <member name="P:FoxTools.Lib.Api.ID">
+            <summary>
+            Уникальный идентификатор сайта в системе.
+            Получить идентификатор можно в личном кабинете на сайте http://foxtools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.AccessKey">
+            <summary>
+            Открытый ключ доступа к API.
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.SecretKey">
+            <summary>
+            Секретный ключ доступа к API (пока не используется).
+            Получить ключ доступа можно в личном кабинете на сайте http://foxtools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.Host">
+            <summary>
+            Адрес сервера, на которой будут делать запросы
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.CustomerID">
+            <summary>
+            Пользовательский идентификатор. Данный параметр можно передавать, чтобы получать более детальную статистику использования сервера. Например, в этот параметр можно передавать идентификатор пользователя в вашей БД, чтобы знать, сколько раз пользователь использовал тот или иной сервис.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.CustomerGroup">
+            <summary>
+            Группа для пользовательских идентификаторов (CustomerID). Вы можете использовать этот параметр для группировки статистических данных. Например, если в CustomerID вы передаете идентификатор пользователя в вашей БД, то параметр CustomerGroup может быть равен 1. Если в CustomerID вы передаете идентификатор страницы на вашем сайта, то CustomerGroup может быть равен 2. Таким образом, вы сможете выделять статистику для пользователей (CustomerGroup = 1) и страниц (CustomerGroup = 2).
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.Tag">
+            <summary>
+            Любые пользовательские данные
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.UseProxy">
+            <summary>
+            Использовать прокси-сервер для запросов
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.ProxyAddress">
+            <summary>
+            Адрес прокси-сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.ProxyPort">
+            <summary>
+            Порт прокси-сервера
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Api.ProxyCredential">
+            <summary>
+            Учетные данные для доступа к прокси-серверу
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Api.StringResultCallback">
+            <summary>
+            Делегат для реализации функции обратного вызова
+            </summary>
+        </member>
+        <member name="T:FoxTools.Lib.Api.IpResultCallback">
+            <summary>
+            Делегат для реализации функции обратного вызова с информацией об ip-адресе
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.TextResult.Text">
+            <summary>
+            Текст с изменной кодировкой. Данное поле может быть пустым, если CP1 и CP2 не были указано.
+            Если это поле пустое, смотрите варианты кодировок и фрагменты текста с изменной кодировкой в свойстве Preview.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.TextResult.Preview">
+            <summary>
+            Коллекция кодировок, содержащая фрагменты текста в этих кодировках.
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.MessageItemText.Text">
+            <summary>
+            Текст письмо
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.ProxyCollection.Page">
+            <summary>
+            Текущая страница
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.ProxyCollection.TotalCount">
+            <summary>
+            Общее количество прокси-серверов в ответе сервера FoxTools.ru
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.MessageItemMultipart.Items">
+            <summary>
+            Коллекция разного содержимого части письма
+            </summary>
+        </member>
+        <member name="M:FoxTools.Lib.Objects.MessageItemBinary.Save(System.String)">
+            <summary>
+            Метод сохраняет файл в указанной место
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.MessageItemBinary.FileName">
+            <summary>
+            Имя файла
+            </summary>
+        </member>
+        <member name="P:FoxTools.Lib.Objects.MessageItemBinary.Data">
+            <summary>
+            Данные файла
+            </summary>
+        </member>
+    </members>
+</doc>

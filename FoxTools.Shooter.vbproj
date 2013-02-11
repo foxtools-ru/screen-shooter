@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D82B6B80-B859-4DDA-99F0-1D73AA056E15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FoxTools.Shooter.My.MyApplication</StartupObject>
+    <RootNamespace>FoxTools.Shooter</RootNamespace>
+    <AssemblyName>FoxTools.Shooter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FoxTools.Shooter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FoxTools.Shooter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\foxshooter.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FoxTools.Lib, Version=1.2013.1.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FoxTools.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="PromptToSave.Designer.vb">
+      <DependentUpon>PromptToSave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PromptToSave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPixelate.Designer.vb">
+      <DependentUpon>ConfigPixelate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPixelate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigPen.Designer.vb">
+      <DependentUpon>ConfigPen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigPen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigShapeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enums.vb" />
+    <Compile Include="FoxShape.vb" />
+    <Compile Include="FoxShapeCollection.vb" />
+    <Compile Include="FoxToolStripButton.Designer.vb">
+      <DependentUpon>FoxToolStripButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoxToolStripButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FoxToolStripMenuItem.Designer.vb">
+      <DependentUpon>FoxToolStripMenuItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoxToolStripMenuItem.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FoxToolStripSplitButton.Designer.vb">
+      <DependentUpon>FoxToolStripSplitButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoxToolStripSplitButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Progress.Designer.vb">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.vb">
+      <DependentUpon>Result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultOfSending.Designer.vb">
+      <DependentUpon>ResultOfSending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ResultOfSending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenContainer.Designer.vb">
+      <DependentUpon>ScreenContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenContainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialButtons.Designer.vb">
+      <DependentUpon>SocialButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SocialButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Strings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ZzWebStart.Designer.vb">
+      <DependentUpon>ZzWebStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ZzWebStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strings.en-US.Designer.vb">
+      <DependentUpon>Strings.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.en-US.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPen.en-US.resx">
+      <DependentUpon>ConfigPen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPixelate.en-US.resx">
+      <DependentUpon>ConfigPixelate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.en-US.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromptToSave.en-US.resx">
+      <DependentUpon>PromptToSave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PromptToSave.resx">
+      <DependentUpon>PromptToSave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultOfSending.en-US.resx">
+      <DependentUpon>ResultOfSending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.en-US.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPixelate.resx">
+      <DependentUpon>ConfigPixelate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigPen.resx">
+      <DependentUpon>ConfigPen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.en-US.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.en-US.resx">
+      <DependentUpon>Result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultOfSending.resx">
+      <DependentUpon>ResultOfSending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenContainer.resx">
+      <DependentUpon>ScreenContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialButtons.en-US.resx">
+      <DependentUpon>SocialButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialButtons.resx">
+      <DependentUpon>SocialButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZzWebStart.en-US.resx">
+      <DependentUpon>ZzWebStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZzWebStart.resx">
+      <DependentUpon>ZzWebStart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en-US.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Sources.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\shareft24px.png" />
+    <None Include="Resources\sharezz24px.png" />
+    <None Include="Resources\cur_marker16px.cur" />
+    <None Include="Resources\cur_pen16px.cur" />
+    <None Include="Resources\gplus40px.png" />
+    <None Include="Resources\ok40px.png" />
+    <None Include="Resources\vk40px.png" />
+    <None Include="Resources\twitter40px.png" />
+    <None Include="Resources\facebook40px.png" />
+    <None Include="Resources\mailru40px.png" />
+    <None Include="Resources\progress64px.gif" />
+    <None Include="Resources\share24px.png" />
+    <None Include="Resources\foxshooter.ico" />
+    <None Include="Resources\cur_marker.ico" />
+    <None Include="Resources\cur_pen.ico" />
+    <None Include="Resources\cur_eraser.ico" />
+    <None Include="Resources\border10px.png" />
+    <None Include="Resources\border5px.png" />
+    <None Include="Resources\border1px.png" />
+    <None Include="Resources\border3px.png" />
+    <None Include="Resources\palette50px.png" />
+    <None Include="Resources\eraser24px.png" />
+    <None Include="Resources\pixelize24px.png" />
+    <None Include="Resources\text24px.png" />
+    <None Include="Resources\shape24px.png" />
+    <None Include="Resources\marker24px.png" />
+    <None Include="Resources\pen24px.png" />
+    <None Include="Resources\copy24px.png" />
+    <None Include="Resources\save24px.png" />
+    <None Include="Resources\settings24px.png" />
+    <None Include="Resources\cancel24px.png" />
+    <None Include="Resources\shooter24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoxToolsScreenShooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="history-ru.md" />
+    <None Include="license-en.md" />
+    <None Include="license-ru.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
